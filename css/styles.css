@@ -1,82 +1,131 @@
 :root{
+   /* Шрифти */
+   
+    /* Колір тексту */
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --second-text-color: #FFFFFF;
-    --accent-color: #2196F3;
-    --background-color: #F5F5F5;
+    --accent-text-color: #2196F3;
+    --logo-header-color: #000000;
+
+    /* Колір фону */
+    --background-color: #FFFFFF;
+    --second-background-color: #2F303A;
+    --accent-bg-color: #2196F3;
+    --activ-btn:#188CE8;
+    --team-background: #F5F5F5;
+
+    /* Інше */
+    
 }
 
-body{
+body {
+    font-family: Roboto, Raleway, sans-serif;
+    font-size: 14 px;
+    line-height: calc(24 / 14); 
+    letter-spacing: 0,03em;
+    color: var(--primary-text-color);
     background-color: var(--background-color);
 }
+
+ .hero, .footer {
+    background-color: var(--second-background-color);
+}
+
+
 /* Загальний стиль логотипу*/
-.logo-link{
-    font-size: 26px;
+.logo {
+    font-family: Raleway;
     font-weight: 700;
-    color: var(--accent-color);
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color: var(--accent-text-color);
 }
 
 /* Друга половина логотипу в header */
-.logo-link .logo-header{
-    color: #000000;
-}
+.logo-header {
+    color: var(--logo-header-color)
+    }
 
 /* Друга половина логотипу в footer */
-.logo-link .logo-footer {
+.logo-footer {
     color: var(--second-text-color)
+}
+ 
+.link {
+    text-decoration: none
+}
+
+.list {
+    list-style: none;
 }
 
 /* Стиль посилань  в header*/
 .link-header {
     color: var(--title-text-color);
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
-    font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.link-header:hover,
+.link-header:focus {
+    color: var(--accent-text-color);
+}
+
+/* Виділення поточної сторінки */
+.current {
+    color: var(--accent-text-color);
 }
 
 
-/* стиль посилань в footer */
-.link-footer {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+/* Герой-заголовок */
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0,06em;
     color: var(--second-text-color);
 }
-
+ 
 /* кнопка замовлення послуги*/
 .hero-btn {
-    background-color: var(--accent-color);
+    background-color: var(--accent-bg-color);
     color: var(--second-text-color);
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0,06em;
     
 }
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #188CE8;
+    background-color:var(--activ-btn);
 }
 
 
 
 /* Заголовки секцій */
 .section-title {
-    color: var(--title-text-color);
+    font-weight: 700;
     font-size: 36px;
-   
-}
-/* Заголовки всередині списку */
-.list-title {
-    color: var(--title-text-color);
-    font-size: 16px;
+    line-height: calc(42 / 36);
+    color: var(--title-text-color);      
 }
 
-/* Текст під заголовком в списку */
-.list-text {
-    color: var(--primary-text-color);
-    font-size: 14px;
+/* Підзаголовки розділу Особливості */
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;  
+  line-height: 1,17;
+  color: var(--title-text-color);
+  text-transform: uppercase;
+}
+
+
+/* ceкція Наша команда */
+.team {
+background-color: var(--team-background);
 }
