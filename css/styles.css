@@ -7,6 +7,7 @@
     --second-text-color: #FFFFFF;
     --accent-text-color: #2196F3;
     --logo-header-color: #000000;
+    --footer-transparent-color: rgba(255, 255, 255, 0.6);
 
     /* Колір фону */
     --background-color: #FFFFFF;
@@ -42,6 +43,7 @@ body {
     color: var(--accent-text-color);
 }
 
+
 /* Друга половина логотипу в header */
 .logo-header {
     color: var(--logo-header-color)
@@ -52,8 +54,15 @@ body {
     color: var(--second-text-color)
 }
  
+
+
 .link {
     text-decoration: none
+}
+ 
+link:hover,
+link:focus {
+    color: var(--accent-text-color);
 }
 
 .list {
@@ -105,8 +114,6 @@ body {
     background-color:var(--activ-btn);
 }
 
-
-
 /* Заголовки секцій */
 .section-title {
     font-weight: 700;
@@ -128,4 +135,44 @@ body {
 /* ceкція Наша команда */
 .team {
 background-color: var(--team-background);
+font-size: 16px;
+line-height: calc(19 / 16);
 }
+
+.team-list-title {
+    font-weight: 500;
+    color: var(--title-text-color);
+  }
+
+  /* Посилання в футері */
+.link-address {
+    font-style: normal;
+    color: var(--second-text-color);
+    text-decoration: none;
+     }
+
+.link-contacts {
+font-style: normal;
+color: var(--footer-transparent-color);
+text-decoration: none;
+ }
+
+.link-address:hover,
+.link-address:focus,
+.link-contacts:hover,
+.link-contacts:focus {
+    color: var(--accent-text-color)
+}
+ /* Проекти в портфоліо */
+ .project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+ }
+
+ .project-subtitle {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+ }
